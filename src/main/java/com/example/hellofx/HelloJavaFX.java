@@ -10,14 +10,14 @@ import javafx.stage.Stage;
 public class HelloJavaFX extends Application {
     @Override
     public void start(Stage stage) {
-        Label message = new Label("Welcome, Emmanuel Chilumunda!");
+        Label message = new Label("Welcome, Shepherd Sampa!");
         Button button = new Button("Start");
         Button button2 = new Button("Reset");
         button.setOnAction(event ->
-                message.setText("Sweet")
+                message.setText("Hi Everyone")
         );
         button2.setOnAction(event->
-                message.setText("Welcome, Emmanuel Chilumunda!")
+                message.setText("Welcome, Shepherd Sampa!")
         );
         HBox buttons = new HBox(10, button, button2);
         buttons.setAlignment(Pos.CENTER);
@@ -25,7 +25,7 @@ public class HelloJavaFX extends Application {
         layout.setAlignment(Pos.CENTER);
         layout.getChildren().addAll(message, buttons);
         Scene scene = new Scene(layout, 500, 300);
-        stage.setTitle("My First JavaFX Application, 202507164");
+        stage.setTitle("My First JavaFX Application, 202500717");
         stage.setScene(scene);
         stage.show();
     }
